@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guess the number</h1>
+    <input id="number">
+    <button id="button" onclick="check()">check</button>
+    <p id="result">result</p>
+    <script>
+        var b=document.getElementById("number")
+        var c=document.getElementById("result")
+        var a=Math.floor(((Math.random()*10)+1))
+        function check(){
+            var b1=b.value
+            if(b1==a)
+            {
+                console.log("Right")
+                result.textContent="Right"
+                alert("You won.....")
+            }
+            else{
+                console.log("Wrong")
+                result.textContent="Wrong"
+            }
+          }
+    </script>
+</body>
+</html>
